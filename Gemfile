@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -11,6 +11,10 @@ gem 'rails', '4.2.0'
  
  group :development do
    gem 'sqlite3'
+   gem 'rails-erd'
+   gem 'pry-rails'
+   gem 'binding_of_caller'
+   gem 'better_errors'
  end
 
 # Use SCSS for stylesheets
@@ -30,10 +34,25 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-# Secure logon
+
+# Twitter Bootstrap
+gem 'bootstrap-sass'
+# Devise Authentication System
 gem 'devise'
-# Handels sensitve data on your app
+# Authorizes different users to different tasks in the app
+gem 'pundit'
+# Handles sensitve data with environment variables
 gem 'figaro'
+# Allows Markdown in Posts
+gem 'redcarpet'
+# Delivers Image to AWS
+gem 'carrierwave'
+# Image Uploading 
+gem 'mini_magick'
+# Supports Amazon S3 
+gem 'fog'
+# Pagination of Topics
+gem 'will_paginate'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -53,5 +72,14 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  #Rspec
+  gem 'rspec-rails'
+
+  #Capybara for testing
+  gem 'capybara'
+
+  #Factory Inheritance Testing
+  gem 'factory_girl_rails'
 end
 
