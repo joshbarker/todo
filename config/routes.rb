@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: '#'
+  root to: 'welcome#home'
 
   devise_for :users
 
