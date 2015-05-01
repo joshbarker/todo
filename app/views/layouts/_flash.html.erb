@@ -1,6 +1,6 @@
-<% flash.keys.each do |key| %>
-  <%= content_tag(:div, class: ["alert", "alert-#{key}", "alert-dismissable"]) do %>
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <%= flash[key] %>
-  <% end %>
+ <% flash.keys.each do |key| %>
+   <%= content_tag(:div, class: ["alert", "alert-#{key}", "alert-dismissable"]) do %>
+     <button type="button" class="close" data-dismiss="alert">&times;</button>
+     <%= flash[key] %>
+   <% end %>
 <% end %> 
