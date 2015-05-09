@@ -53,6 +53,8 @@ gem 'mini_magick'
 gem 'fog'
 # Pagination of Topics
 gem 'will_paginate'
+# Makes fake app data
+gem 'faker'
 
 
 # Use ActiveModel has_secure_password
