@@ -55,7 +55,8 @@ gem 'fog'
 gem 'will_paginate'
 # Makes fake app data
 gem 'faker'
-
+# Auto delete expired items
+gem 'whenever', :require => false
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
