@@ -1,0 +1,35 @@
+<table class="table">
+  <tr>
+    <th>List Name</th>
+  </tr>
+  <% @lists.each do |list| %>
+    <tr>
+      <td>
+        <%= link_to list.name, user_list_path(@user, list), class: 'btn' %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+<%= link_to 'Add New List', new_user_list_path(@user), class: 'btn' %>
+<br/>
+<br/>
+<%= link_to 'Edit', edit_user_path(@user), class: 'btn' %>
+\|
+<%= link_to 'Back', users_path, class: 'btn' %>
+
+
+MY ITEMS for <%= @user.name %>
+
+@items.each do |item|
+  item.description
+  <%# item.days_left %>
+  link_to "DONE", .... to the destroy action in ItemsController
+
+============
+MY ITEMS
+
+DESCR                       DAys LEFT           DONE
+Mow the lawn                5                 [DONE]
+Throw the garbage           3                 [DONE]
+
+<%= link_to 'Add New Item', new_user_item_path(@user), class: 'btn' %>
